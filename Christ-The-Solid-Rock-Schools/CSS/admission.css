@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: none;
+  -webkit-user-select: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffa825;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+/* Scrollbar customization ends */
+
+body,
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+/* Code for the top panel */
+.topPanel {
+  width: 100%;
+  height: 2em;
+  background-color: #0098db; /*pacific blue*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#mySidenav,
+#openBtn,
+#main {
+  display: none;
+}
+#navSocial {
+  width: 10em;
+  height: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#navSocial a {
+  text-decoration: none;
+}
+#navSocial a i {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+#navSocial a i:hover {
+  transform: scale(1.05);
+}
+#navLinks {
+  width: 25em;
+  height: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#navLinks a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#navLinks a button {
+  width: 10em;
+  height: 1.9em;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #ffa825; /*Lightning yellow*/
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#navLinks a button:hover {
+  transform: scale(1.05);
+}
+#navLinks #callLink {
+  font-size: 1em;
+}
+/* Top panel code ends */
+/* Navbar Code */
+.navBar {
+  width: 100%;
+  height: 4.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  -webkit-user-select: none;
+}
+#firstDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+}
+#image {
+  width: 4em;
+  height: 4em;
+}
+#image img {
+  width: 100%;
+  height: 100%;
+  -webkit-user-drag: none;
+  border-radius: 50px;
+}
+.navBar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+}
+.navBar a:hover {
+  transform: scale(1.05);
+}
+.navBar a#active {
+  color: #0098db;
+}
+/* Navbar code ends */
+#firstDiv2 {
+  display: none;
+}
+/* homePage begins */
+.homePage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/Christ-The-Solid-Rock-Schools/IMAGES/group1.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: darken !important;
+  width: 100%;
+  height: 30em;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePage #heading {
+  width: 100%;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2em;
+}
+/* homePage ends */
+/* Admission details */
+.admissionDetails {
+  width: 100%;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#admission1,
+#admission2 {
+  width: 100%;
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em;
+}
+#admission1 #h2Div,
+#admission2 #h2Div {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+/* Admission details ends */
+
+@media (max-width: 768px) {
+  * {
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: none;
+  }
+
+  body,
+  .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .topPanel {
+    width: 100%;
+    height: 10em;
+    background-color: #0098db; /*pacific blue*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+    -webkit-user-select: none;
+  }
+  #navLinks {
+    width: 25em;
+    height: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #navLinks a button {
+    width: 14em;
+    height: 2.5em;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #ffa825; /*Lightning yellow*/
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+  }
+  #navLinks #callLink {
+    font-size: 1.2em;
+  }
+  #navSocial {
+    width: 10em;
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .navBar {
+    display: none;
+  }
+  #mySidenav,
+  #openBtn,
+  #main {
+    display: initial;
+  }
+  #firstDiv2 {
+    width: 100%;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #firstDiv2 i {
+    font-size: 2em;
+  }
+  .homePage {
+    width: 100%;
+    height: auto;
+  }
+  .homePage * {
+    overflow: none !important;
+  }
+  /* Admission details */
+  .admissionDetails {
+    width: 100%;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #admission1,
+  #admission2 {
+    width: 100%;
+    height: 26em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+  }
+  #admission1 #h2Div,
+  #admission2 #h2Div {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Admission details ends */
+}
+
+/* SIDE NAV */
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 12; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #ffa825; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/* SIDE NAV ENDS*/

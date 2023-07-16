@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admissions</title>
+    <!-- Link to CSS file -->
+    <link
+      rel="stylesheet"
+      href="/Christ-The-Solid-Rock-Schools/CSS/admission.css"
+    />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Change Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Christ-The-Solid-Rock-Schools/IMAGES/logo.jpeg"
+    />
+  </head>
+  <body>
+    <!-- Container begins -->
+    <div class="container">
+      <!-- Top Navigation Section -->
+      <div class="topPanel">
+        <div id="navSocial">
+          <a
+            href="https://www.facebook.com/solidrock.schools.5?mibextid=ZbWKwL"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://instagram.com/christthesolidrockschool?igshid=NjlwNzlyMDk2Mg=="
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <div id="navLinks">
+          <a href="tel:+2348037146751"><button>Apply Now</button></a>
+          <a href="#" id="callLink"
+            ><i class="fa-solid fa-phone"></i>&nbsp;+234 (0) 8037146751</a
+          >
+        </div>
+      </div>
+      <!-- Top Panel Ends -->
+      <!-- Big Screen Navigation bar  -->
+      <div class="navBar">
+        <div id="firstDiv">
+          <div id="image">
+            <img
+              src="/Christ-The-Solid-Rock-Schools/IMAGES/logo.jpeg"
+              alt="School Logo"
+            />
+          </div>
+          <h2>Christ The Solid Rock School</h2>
+        </div>
+        <a href="index.html">HOME</a>
+        <a href="index.html#about_page">ABOUT</a>
+        <a href="admission.html" id="active">ADMISSIONS</a>
+        <a href="contact.html">CONTACT US</a>
+      </div>
+      <!-- End of Navbar -->
+      <!-- Side Navigation -->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="index.html">Home</a>8
+        <a href="index.html#about_page">About</a>
+        <a href="admission.html">Admissions</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <!-- Side nav ends here -->
+      <!-- firstDiv2 clone -->
+      <div id="firstDiv2">
+        <div id="image">
+          <img
+            src="/Christ-The-Solid-Rock-Schools/IMAGES/logo.jpeg"
+            alt="School Logo"
+          />
+        </div>
+        <span onclick="openNav()" id="openBtn" style="cursor: pointer"
+          ><i class="fa-solid fa-bars"></i
+        ></span>
+      </div>
+      <!-- firstDiv2 clone ends -->
+      <!-- HomePage -->
+      <div class="homePage">
+        <div id="heading"></div>
+      </div>
+      <!-- HomePage ends -->
+      <!-- Admission details begins -->
+      <div class="admissionDetails">
+        <!-- admission1 div -->
+        <div id="admission1">
+          <div id="h2Div">
+            <h2>Welcome to Admission</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
+            debitis mollitia officia facilis corrupti ad itaque doloremque,
+            explicabo, culpa quos eos. Vitae, at tenetur vero, officiis mollitia
+            voluptas eaque ea sequi alias libero consectetur blanditiis nihil
+            dolorem rem deleniti asperiores.
+          </p>
+        </div>
+        <!-- admission1 div ends -->
+        <!-- admission2 div -->
+        <div id="admission2">
+          <div id="h2Div">
+            <h2>The Admission Process</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
+            debitis mollitia officia facilis corrupti ad itaque doloremque,
+            explicabo, culpa quos eos. Vitae, at tenetur vero, officiis mollitia
+            voluptas eaque ea sequi alias libero consectetur blanditiis nihil
+            dolorem rem deleniti asperiores.
+          </p>
+        </div>
+        <!-- admission2 div ends -->
+      </div>
+      <!-- Admission details ends -->
+    </div>
+    <!-- Container ends -->
+
+    <script>
+      AOS.init();
+
+      /* Set the width of the side navigation to 250px */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      /* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
